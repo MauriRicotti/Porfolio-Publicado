@@ -1,0 +1,345 @@
+
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 70vw;
+    background-color: #151b49;
+    color: white;
+    background-image: url(fondo\ azul\ marino.jpg);
+    background-size: cover;
+}
+
+header {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    font-size: 16px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.brand{
+    margin-top: -7px;
+}
+
+.brand span{
+    color: rgb(143, 0, 0);
+}
+
+.Menu{
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    font-weight:bold;
+}
+
+.Menu li{
+    list-style: none;
+}
+
+.Menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+}
+
+.Menu .active{
+    color: rgb(143, 0, 0);
+}
+
+.Menu a:hover{
+    background-color: rgb(83, 1, 1);
+    color:#ffffff;
+    transition: ease-in .2s;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 1px rgb(63, 63, 63);
+}
+
+.toggle-menu,
+.info-content__subtitle{
+    display: none;
+}
+
+.main{
+    margin:auto;
+    width: 75vw;
+    height: 70vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.main img{
+    width: 350px;
+    height: 520px;
+    border: 7px solid  rgb(110, 0, 0);
+    z-index: 1;
+    box-shadow: 1px 2px 20px 7px rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.foto-1:hover{
+    font-size: 100px;
+    transition: ease-in .7s;
+}
+
+h1{
+    font-size: clamp(4vw, 1.5em, 3em);
+    margin: 10px 0;
+    
+}
+
+.info-content span{
+    color: rgb(143, 0, 0);
+}
+
+.download-cv{
+    padding: 10px 20px;
+    background-color: rgb(143, 0, 0);
+    border: none;
+    border-radius: 18px;
+    margin-top: 19px;
+    cursor:pointer;
+    box-shadow: 1px 2px 20px 2px rgb(0, 0, 0);
+    transition: ease-in .3s;
+    font-weight: bold;
+}
+
+.download-cv:hover{
+    background-color: rgb(110, 0, 0);
+    box-shadow: none;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    height: 70vw;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    background-image: url(20230906_180224_007.jpg);
+    background-size: cover;
+}
+
+.about img{
+    width: 350px;
+    height: 520px;
+    grid-column: 1/5;
+    box-shadow: 1px 2px 20px 7px rgb(0, 0, 0);
+    border: 7px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+.about-info{
+    grid-column: 5/10;
+    padding: 4em;
+}
+
+.about-info h2{
+    font-size: 2.5em;
+    color: rgb(143, 0, 0);
+}
+
+.divider{
+    height: 4px;
+    width: 100px;
+    background-color:#ffffff;
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+
+.about p{
+    margin-bottom: 1em;
+}
+
+
+.portfolio{
+    width: 100vw;
+    height: 120vh;
+    background-color:#191c32;
+    color: white;
+    background-image: url(fondo\ azul\ marino.jpg);
+    background-size: cover;
+}    
+
+.card__title h2{
+    margin-left: 40px;
+}
+
+.portfolio-headings{
+    width: 100vw;
+    padding: 5em;
+}
+
+.portfolio-headings h2{
+    font-size: 2.5em;
+}
+
+.portfolio .container{
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card{
+    width: 250px;
+    height: 360px;
+    background-color:rgb(0, 0, 73);
+    box-shadow: 1px 2px 20px 2px rgb(0, 0, 0);
+    margin-left: 15px;
+}
+
+.card__img{
+    width: 100%;
+    height: 150px;
+    background-image: url(2-original.png);
+    background-size: cover;
+    zoom: 95%;
+}
+
+.card__title{
+    padding: 20px;
+}
+
+.card__proyect-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card__proyect-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.card__proyect-links i{
+    font-size: 1.5em;
+}
+
+.card .proyect-details{
+    margin: 0 auto;
+    margin: 1em;
+    width: 70%;
+}
+
+.card .proyect-details a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.proyect-details-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.footer{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.footer-content h2{
+    font-size: 3em;
+}
+
+.footer-content h5{
+    font-size: 1.1em;
+    margin-left: 55px;
+}
+
+.footer-content span{
+    color: rgb(141, 0, 0);
+}
+
+.sotial-network{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+    margin-left: 200px;
+}
+.sotial-network a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.sotial-network a:hover{
+    color: rgb(141, 0, 0);
+    box-shadow: 1px 2px 20px 5px rgb(0, 0, 0);
+    transition: ease-in .3s;
+}
+
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img,
+.about-info{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+.card,
+.portfolio-headings{
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+
+    animation-timeline: --card;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+
+
